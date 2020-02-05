@@ -7,6 +7,9 @@ package ntime;
  * 空间复杂度：O(n)
  * 稳定性：不稳定
  * 是否基于交换：否
+ *
+ * 适用场景：数据多，内存空间小（如对10GB订单按金额排序，但内存空间只有几百MB）
+ * 注意：如果数据中包含负数，应该先转换为正数再装桶
  */
 public class BucketSort {
     public int[] bucketSort(int[] array, int bucketSize) {
