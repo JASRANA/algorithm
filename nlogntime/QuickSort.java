@@ -27,6 +27,7 @@ public class QuickSort {
     private int partion(int[] array, int p, int q) {
         int j = p;
         for (int i = p; i < q; i++) {
+            // 这里直接选取最后一个元素作为分区点
             if (array[i] < array[q]) {
                 int temp = array[i];
                 array[i] = array[j];
