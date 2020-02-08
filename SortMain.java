@@ -5,19 +5,21 @@ import nlogntime.MergeSort;
 import nlogntime.QuickSort;
 import ntime.BucketSort;
 import ntime.CountingSort;
+import ntime.RadixSort;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class SortMain {
 
-    private static final int LENGTH = 100000;
+    private static final int LENGTH = 100;
 
     public static void main(String[] args) {
 
         int[] array = new int[LENGTH];
         Random r = new Random(1);
         for (int i = 0; i < LENGTH; i++) {
-            array[i] = r.nextInt(LENGTH*100);
+            array[i] = r.nextInt(LENGTH*10);
         }
 
         long startBubble = System.nanoTime();
@@ -52,6 +54,14 @@ public class SortMain {
         int[] counting = new CountingSort().countingSort(array.clone());
         long endCounting = System.nanoTime();
 
+        long startSystem = System.nanoTime();
+        Arrays.sort(array.clone());
+        long endSystem = System.nanoTime();
+
+        long startRadix = System.nanoTime();
+        int[] radix = new RadixSort().radixSort(array.clone());
+        long endRadix = System.nanoTime();
+
         // 冒泡排序与插入排序都是O(n²)，为什么慢这么多？
         // ————原因：插入排序每次只有一个数据赋值操作；而冒泡排序需要交换元素值，因此有三个数据赋值操作。
         printTime("bubble", startBubble, endBubble);
@@ -61,6 +71,8 @@ public class SortMain {
         printTime("quick", startQuick, endQuick);
         printTime("bucket", startBucket, endBucket);
         printTime("counting", startCounting, endCounting);
+        printTime("radix", startRadix, endRadix);
+        printTime("system", startSystem, endSystem);
 
         // clone 的有趣现象
         // 对原数组修改会影响clone的数组
