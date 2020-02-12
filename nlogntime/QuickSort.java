@@ -19,12 +19,12 @@ public class QuickSort {
            if (p >= q) {
             return;
         }
-        int r = partion(array, p, q);
+        int r = partition(array, p, q);
         sortRecursion(array, p, r-1);
         sortRecursion(array, r+1, q);
     }
 
-    private int partion(int[] array, int p, int q) {
+    private int partition(int[] array, int p, int q) {
         int j = p;
         for (int i = p; i < q; i++) {
             // 这里直接选取最后一个元素作为分区点
