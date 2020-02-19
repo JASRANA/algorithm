@@ -1,4 +1,4 @@
-package ntime;
+package sort.ntime;
 
 /**
  * 8、基数排序

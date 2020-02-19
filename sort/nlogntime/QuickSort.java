@@ -1,4 +1,4 @@
-package nlogntime;
+package sort.nlogntime;
 
 /**
  * 5、快速排序

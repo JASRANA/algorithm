@@ -1,6 +1,4 @@
-package n2time;
-
-import java.util.Arrays;
+package sort.n2time;
 
 /**
  * 冒泡排序

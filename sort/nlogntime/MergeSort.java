@@ -1,6 +1,9 @@
-package nlogntime;
+package sort.nlogntime;
+
+import sort.SortMain;
 
 import java.util.Arrays;
+import java.util.Stack;
 
 /**
  * 4、归并排序
@@ -50,4 +53,5 @@ public class MergeSort {
         }
         return array;
     }
+
 }

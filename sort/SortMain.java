@@ -1,11 +1,13 @@
-import n2time.BubbleSort;
-import n2time.InsertSort;
-import n2time.SelectSort;
-import nlogntime.MergeSort;
-import nlogntime.QuickSort;
-import ntime.BucketSort;
-import ntime.CountingSort;
-import ntime.RadixSort;
+package sort;
+
+import sort.n2time.BubbleSort;
+import sort.n2time.InsertSort;
+import sort.n2time.SelectSort;
+import sort.nlogntime.MergeSort;
+import sort.nlogntime.QuickSort;
+import sort.ntime.BucketSort;
+import sort.ntime.CountingSort;
+import sort.ntime.RadixSort;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -87,7 +89,7 @@ public class SortMain {
 //        System.out.println(clone[0][0]);
     }
 
-    private static void printArray(int[] array) {
+    public static void printArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i]);
             System.out.print(" ");

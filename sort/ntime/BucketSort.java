@@ -1,4 +1,4 @@
-package ntime;
+package sort.ntime;
 
 /**
  * 6、桶排序

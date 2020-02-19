@@ -1,4 +1,4 @@
-package n2time;
+package sort.n2time;
 
 /**
  * 3、选择排序

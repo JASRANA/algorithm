@@ -1,8 +1,4 @@
-package n2time;
-
-import java.util.*;
-import java.util.concurrent.BlockingDeque;
-import java.util.concurrent.CopyOnWriteArrayList;
+package sort.n2time;
 
 /**
  * 2、插入排序

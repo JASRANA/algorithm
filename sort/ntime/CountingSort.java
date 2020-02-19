@@ -1,4 +1,4 @@
-package ntime;
+package sort.ntime;
 
 /**
  * 7、计数排序
