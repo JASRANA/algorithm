@@ -31,3 +31,9 @@
 
 :white_check_mark: 杨辉三角变形
 
+:wrench: 最少钞票数凑出指定金额
+
+:wrench: 最大股票利润
+
+:wrench: 最大分割绳子乘积
+
