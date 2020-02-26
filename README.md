@@ -17,8 +17,17 @@
 
 :white_check_mark: 计数排序
 ## 二叉树的遍历
-:wrench: 前序遍历
+:white_check_mark: 前序遍历
 
-:wrench: 中序遍历
+:white_check_mark: 中序遍历
 
 :wrench: 后序遍历
+
+:wrench: 层序遍历
+## 动态规划
+:white_check_mark: 0-1 背包
+
+:white_check_mark: 0-1 背包升级版（增加物品价值）
+
+:white_check_mark: 杨辉三角变形
+
